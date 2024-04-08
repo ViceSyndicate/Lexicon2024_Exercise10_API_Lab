@@ -34,25 +34,15 @@ function pullACard(){
     .then(res => res.json())
     .then(data => {
 
-        let img = document.createElement('image');
-        img.setAttribute('width', 226);
-        img.setAttribute('height', 314);
+        let img = document.createElement('img');
         let imgUrl = data.cards[0].image;
         img.setAttribute('src', imgUrl);
 
         let cardDiv = document.getElementById('cardDiv');
-        cardDiv.setAttribute('width', 226);
-        cardDiv.setAttribute('height', 314);
         cardDiv.appendChild(img);
 
-        for(let i = 0; i < data.cards.length; i++){
+        // for(let i = 0; i < data.cards.length; i++){}
 
-        }
-        //let stringify = JSON.stringify(data, null, 2);
-        //console.log(stringify);
-        //document.getElementById('textarea').value = s;
-
-        // Count says how many cards to draw
     })
     .catch (err => console.log(err))
 }

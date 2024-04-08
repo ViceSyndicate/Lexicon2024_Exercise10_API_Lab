@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the body fills at least the viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+#cardDiv {
+    width: auto;
+    height: auto;
+    /* height="314" width="226 */
+}
